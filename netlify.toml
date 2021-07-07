@@ -1,0 +1,9 @@
+[build]
+command="cp ./libx86/* node_modules/canvas/build/Release/ && npm run build:netlify"
+publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/handler"
+  status = 200
+  force = true

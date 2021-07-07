@@ -1,0 +1,19 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "lambdas",
+  "entryFile": "handler",
+  "projects": {
+    "gram": {
+      "type": "library",
+      "root": "libs/gram",
+      "entryFile": "index",
+      "sourceRoot": "libs/gram/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/gram/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": false
+  }
+}
